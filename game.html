@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris game</title>
+    <link rel="stylesheet" type="text/css" href="Style/styleGame.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+</head>
+<body>
+<div id="background">
+    <div class="grid">
+        <canvas id="board" class="game-board"></canvas>
+        <div class="right-column">
+            <div>
+                <h1>TETRIS</h1>
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">0</span></p>
+                <p>Highscore: <span id="highscore">0</span></p>
+                
+                <canvas id="next" class="next"></canvas>
+            </div>
+            <button onclick="play()" class="play-button">Play</button>
+        </div>
+    </div>
+</div>
+    <script src="node_modules/animejs/lib/anime.min.js"></script>
+    <script src="JS/constants.js"></script>
+    <script src="JS/board.js"></script>
+    <script src="JS/piece.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/anime.js"></script>
+    <script src="JS/highScore.js"></script>
+</body>
+</html>
